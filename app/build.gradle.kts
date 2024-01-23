@@ -70,6 +70,11 @@ dependencies {
     ksp("com.google.dagger:hilt-compiler:$hilt")
     ksp ("com.google.dagger:hilt-android-compiler:$hilt")
 
+    //cardview
+    val cardview  =("1.0.0")
+    implementation ("androidx.cardview:cardview:$cardview")
+
+
     val corektx = ("1.12.0")
     val appcompat = ("1.6.1")
     val material = ("1.11.0")
