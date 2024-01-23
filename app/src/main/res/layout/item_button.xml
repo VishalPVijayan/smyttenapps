@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.cardview.widget.CardView
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/cardViewItem"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_margin="10dp">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="10dp"
+    android:background="@drawable/card_background">
 
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/netflix_red">
+    android:background="@color/netflix_dark_red"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/buttonItem"

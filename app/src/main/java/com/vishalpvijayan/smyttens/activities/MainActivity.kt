@@ -51,8 +51,15 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.lifecycleOwner = this
 
+        GlobalScope.launch(Dispatchers.IO) {
+            if(mainViewModel.database.myDao().getCountOfRecord()<=0){
+                processJsonData()
+            }
+        }
 
-        processJsonData()
+
+
+
 
         Handler(Looper.getMainLooper()).postDelayed({
             val bottomSheetDialogFragment = MessageFragment()

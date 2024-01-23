@@ -20,6 +20,9 @@ interface MyDao {
     @Query("SELECT * FROM product")
     suspend fun getAllProducts(): List<ProductEntity>
 
+    @Query("SELECT COUNT(*) FROM button")
+    suspend fun getCountOfRecord():Int
+
     @Query("SELECT * FROM button")
     suspend fun getAllButtons(): List<ButtonEntity>
 
