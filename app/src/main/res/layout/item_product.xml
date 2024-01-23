@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="item"
             type="com.vishalpvijayan.smyttens.data.ProductEntity" />
     </data>
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="170dp"
@@ -68,9 +70,9 @@
                 android:gravity="center"
                 android:onClick="onAddToCartClick"
                 android:padding="10dp"
-                android:textSize="22sp"
                 android:text="@string/add_to_cart"
                 android:textColor="@color/white"
+                android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

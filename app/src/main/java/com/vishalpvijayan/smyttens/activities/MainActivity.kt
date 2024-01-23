@@ -3,6 +3,8 @@ package com.vishalpvijayan.smyttens.activities
 import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -14,6 +16,7 @@ import com.vishalpvijayan.smyttens.adapter.ProductAdapter
 import com.vishalpvijayan.smyttens.data.ButtonEntity
 import com.vishalpvijayan.smyttens.data.ProductEntity
 import com.vishalpvijayan.smyttens.databinding.ActivityMainBinding
+import com.vishalpvijayan.smyttens.fragment.MessageFragment
 import com.vishalpvijayan.smyttens.interfaces.OnBtnClickListener
 
 import com.vishalpvijayan.smyttens.viewModels.MainViewModel
@@ -43,14 +46,18 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.lifecycleOwner = this
 
+
         processJsonData()
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            val bottomSheetDialogFragment = MessageFragment()
+            bottomSheetDialogFragment.show(supportFragmentManager, MessageFragment::class.java.simpleName)
+        }, 8000)
 
         mainViewModel.loadProductsAndButtons()
 
@@ -145,6 +152,7 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
 
     override fun onButtonClicked(button: ButtonEntity, name: String) {
         Log.d("Click", "OnClicked")
+
         navigateToActivity(name)
     }
 
