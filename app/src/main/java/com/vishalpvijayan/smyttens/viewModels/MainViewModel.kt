@@ -22,13 +22,10 @@ import org.json.JSONException
 import org.json.JSONObject
 import javax.inject.Inject
 
-
 @HiltViewModel
 class MainViewModel @Inject
 constructor(val database: AppDatabase, @ApplicationContext val context: Context) :
     ViewModel() {
-
-
 
     private val _products = MutableLiveData<List<ProductEntity>?>()
     val products: MutableLiveData<List<ProductEntity>?> get() = _products

@@ -1,6 +1,7 @@
 package com.vishalpvijayan.smyttens.activities
 
 import android.content.ContentValues
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import com.vishalpvijayan.smyttens.data.ButtonEntity
 import com.vishalpvijayan.smyttens.data.ProductEntity
 import com.vishalpvijayan.smyttens.databinding.ActivityMainBinding
 import com.vishalpvijayan.smyttens.interfaces.OnBtnClickListener
+
 import com.vishalpvijayan.smyttens.viewModels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
@@ -126,7 +128,6 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
 
         }
         loopCount++
-
     }
 
     fun processButtonData(buttonArray: JSONArray) {
@@ -136,7 +137,6 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
             val name = buttonObject.getString("name")
 
             val button = ButtonEntity(0,id, name,false)
-
             GlobalScope.launch(Dispatchers.IO) {
                 mainViewModel.database.myDao().insertButton(button)
             }
@@ -144,7 +144,58 @@ class MainActivity : AppCompatActivity(),OnBtnClickListener {
     }
 
     override fun onButtonClicked(button: ButtonEntity, name: String) {
-       Log.d("Click","OnClicked")
+        Log.d("Click", "OnClicked")
+        navigateToActivity(name)
+    }
+
+    private fun navigateToActivity(name: String) {
+        when (name) {
+            "Activity A" -> {
+                val intent = Intent(this, ActivityA::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+            }
+
+            "Activity B" -> {
+
+                val intent = Intent(this, ActivityB::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+
+            }
+
+            "Activity C" -> {
+
+                val intent = Intent(this, ActivityC::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+
+            }
+
+            "Activity D" -> {
+
+                val intent = Intent(this, ActivityA::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+
+            }
+
+            "Activity E" -> {
+
+                val intent = Intent(this, ActivityB::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+
+            }
+
+            "Activity F" -> {
+
+                val intent = Intent(this, ActivityC::class.java)
+                intent.putExtra("activityName", name)
+                startActivity(intent)
+
+            }
+        }
     }
 }
 
