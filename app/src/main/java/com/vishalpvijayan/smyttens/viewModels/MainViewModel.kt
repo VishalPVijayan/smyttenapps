@@ -2,6 +2,7 @@ package com.vishalpvijayan.smyttens.viewModels
 
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -24,10 +25,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject
-constructor(private val database: AppDatabase,@ApplicationContext private val context: Context) :
+constructor(val database: AppDatabase, @ApplicationContext val context: Context) :
     ViewModel() {
 
-    var loopCount = 0
+
 
     private val _products = MutableLiveData<List<ProductEntity>?>()
     val products: MutableLiveData<List<ProductEntity>?> get() = _products
@@ -35,16 +36,33 @@ constructor(private val database: AppDatabase,@ApplicationContext private val co
     private val _buttons = MutableLiveData<List<ButtonEntity>?>()
     val buttons: MutableLiveData<List<ButtonEntity>?> get() = _buttons
 
-    init {
-        loadProductsAndButtons()
+
+    fun loadProductsAndButtons() {
+    viewModelScope.launch {
+        _buttons.value = withContext(Dispatchers.IO) {
+            database.myDao().getAllButtons()
+        }
     }
 
-    private fun loadProductsAndButtons() {
+        viewModelScope.launch {
+            _products.value = withContext(Dispatchers.IO) {
+                database.myDao().getAllProducts()
+            }
+        }
+}
+
+
+
+    /*init {
+        loadProductsAndButtons()
+    }*/
+
+    /*private fun loadProductsAndButtons() {
         viewModelScope.launch {
             _products.value = withContext(Dispatchers.IO) {
                 val products = database.myDao().getAllProducts()
                 if (products.isEmpty()) {
-                    processJsonData()
+                    MainActivity().processJsonData()
                 }
                 products
             }
@@ -53,14 +71,40 @@ constructor(private val database: AppDatabase,@ApplicationContext private val co
                 database.myDao().getAllButtons()
             }
         }
-    }
+    }*/
 
-    private fun processJsonData() {
+
+
+    /*private suspend fun processJsonData() {
         val jsonData: String? = MainActivity().loadJSONFromAsset("smytten.json")
         try {
             val rootJsonObject = jsonData?.let { JSONObject(it) }
             val contentArray = rootJsonObject?.getJSONArray("content")
 
+            withContext(Dispatchers.Main) {
+                for (i in 0 until (contentArray?.length() ?: 0)) {
+                    val contentObject = contentArray?.getJSONObject(i)
+                    val type = contentObject?.getString("type")
+                    val dataArray = contentObject?.getJSONArray("data")
+
+                    when (type) {
+                        "PRODUCT" -> dataArray?.let { processProductData(it) }
+                        "BUTTON" -> dataArray?.let { processButtonData(it) }
+                    }
+                }
+            }
+
+        } catch (e: JSONException) {
+            e.printStackTrace()
+        }
+    }*/
+
+
+    /*private suspend fun processJsonData() {
+        val jsonData: String? = MainActivity().loadJSONFromAsset("smytten.json")
+        try {
+            val rootJsonObject = jsonData?.let { JSONObject(it) }
+            val contentArray = rootJsonObject?.getJSONArray("content")
 
             for (i in 0 until (contentArray?.length() ?: 0)) {
                 val contentObject = contentArray?.getJSONObject(i)
@@ -76,9 +120,9 @@ constructor(private val database: AppDatabase,@ApplicationContext private val co
         } catch (e: JSONException) {
             e.printStackTrace()
         }
-    }
+    }*/
 
-    private fun processProductData(productArray: JSONArray) {
+   /* suspend fun processProductData(productArray: JSONArray) {
         for (i in 0 until productArray.length()) {
 
             val productObject = productArray.getJSONObject(i)
@@ -96,9 +140,9 @@ constructor(private val database: AppDatabase,@ApplicationContext private val co
             }
         }
         loopCount++
-    }
+    }*/
 
-    private fun processButtonData(buttonArray: JSONArray) {
+    /*suspend fun processButtonData(buttonArray: JSONArray) {
         for (i in 0 until buttonArray.length()) {
             val buttonObject = buttonArray.getJSONObject(i)
             val id = buttonObject.getInt("id")
@@ -110,6 +154,6 @@ constructor(private val database: AppDatabase,@ApplicationContext private val co
                 database.myDao().insertButton(button)
             }
         }
-    }
+    }*/
 
 }
