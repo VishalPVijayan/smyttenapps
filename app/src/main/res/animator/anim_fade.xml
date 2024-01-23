@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fade in animation -->
+    <objectAnimator
+        android:duration="1500"
+        android:propertyName="alpha"
+        android:valueFrom="0.0"
+        android:valueTo="1.0" />
+
+    <!-- Scale up horizontally -->
+    <objectAnimator
+        android:duration="2000"
+        android:propertyName="scaleX"
+        android:valueFrom="1.0"
+        android:valueTo="1.5" />
+
+    <!-- Scale up vertically -->
+    <objectAnimator
+        android:duration="2000"
+        android:propertyName="scaleY"
+        android:valueFrom="1.0"
+        android:valueTo="1.5" />
+
+</set>

@@ -1,7 +1,8 @@
-package com.vishalpvijayan.smyttens
+package com.vishalpvijayan.smyttens.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vishalpvijayan.smyttens.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
