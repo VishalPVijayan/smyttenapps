@@ -1,0 +1,358 @@
+{
+  "content": [
+    {
+      "type": "PRODUCT",
+      "data": [
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        }
+      ]
+    },
+    {
+      "type": "BUTTON",
+      "data": [
+        {
+          "id": 1,
+          "name": "Activity A"
+        },
+        {
+          "id": 2,
+          "name": "Activity B"
+        },
+        {
+          "id": 3,
+          "name": "Activity C"
+        },
+        {
+          "id": 4,
+          "name": "Activity D"
+        },
+        {
+          "id": 5,
+          "name": "Activity E"
+        },
+        {
+          "id": 6,
+          "name": "Activity F"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "data": [
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "data": [
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "data": [
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "data": [
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        },
+        {
+          "id": 68505,
+          "brand": "Lakme",
+          "name": "Sheet Mask Strawberry Blast",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1642156033_ZERO.jpg"
+        },
+        {
+          "id": 64855,
+          "brand": "Mamaearth",
+          "name": "Milky Soft Body Lotion With Oats, Milk & Calendula",
+          "image": "https://d1gjaxk0t255cq.cloudfront.net/discover_product/1639197335_DMAE0202AB18.jpg"
+        }
+      ]
+    }
+  ]
+}
